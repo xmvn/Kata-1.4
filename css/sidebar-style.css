@@ -1,0 +1,152 @@
+@import url("fonts.css");
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+*{
+  margin-top: 0;
+  padding: 0;
+  font-family:"TT Lakes", sans-serif;
+}
+.body{
+  color: #1B1C21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+a{
+  text-decoration: none;
+  color:#1B1C21;
+}
+.sidebar{
+
+  width:320px;
+  height: 100vh;
+  max-height: 1024px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  font-weight: 500;
+  position: fixed;
+  overflow: auto;
+}
+.circle-btn{
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  cursor: pointer;
+ 
+}
+.circle-btn:hover{
+  opacity: 0.7;
+  transition: 5ms;
+  transition-delay: 5ms;
+}
+.circle-btn:active{
+  transform: translateY(2px);
+  transition: 100ms;
+}
+.sidebar-header{
+display: flex;
+justify-content: space-between;
+height:100px;
+padding: 24px;
+padding-top: 0;
+align-items: center;
+}
+.sidebar-menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  list-style: none;
+}
+.sidebar-menu ul li{
+  height: 32px;
+}
+.sidebar-menu__item{
+  padding-left: 24px;
+  max-width: 222px;
+  height:100%;
+  display: flex;
+  align-items: center;
+}
+.sidebar-menu__item--active{
+  border-left: 4px solid #41F6D7;
+  color: #7E7E82;
+}
+
+.sidebar-header__burger-close{
+background-image: url(../img/burger-close.svg);
+margin-right: 20px;
+}
+.sidebar-header__search{
+  background-image: url(../img/search.svg);
+  margin-left: auto;
+}
+.sidebar-footer__call{
+  background-image: url(../img/call.svg);
+  margin-right: 16px;
+}
+.sidebar-footer__chat{
+  background-image: url(../img/chat.svg);
+  margin-right: 16px;
+
+}
+.sidebar-footer__profile{
+  background-image: url(../img/profile.svg);
+}
+.sidebar-footer{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  padding-bottom: 0;
+}
+.sidebar-footer__buttons{
+
+}
+.sidebar-footer__contacts{
+display: flex;
+flex-direction: column;
+margin-top: 12px;
+margin-bottom: 40px;
+}
+.sidebar-footer__contacts--mail{
+  color: #1B1C21;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+}
+.sidebar-footer__contacts--tel{
+  color: #1B1C21;
+  font-family: TT Lakes;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+.sidebar-footer__languages{
+  margin-bottom: 32px;
+  margin-top: auto;
+}
+.language--active{
+  color: #7E7E82;
+
+}
